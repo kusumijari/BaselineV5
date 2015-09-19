@@ -19,9 +19,9 @@ public class InputTest {
 
     @Test
     public void shouldRecieveInput() {
-        View view = new View();
+        Input input = new Input();
 
-        assertEquals("1", view.getInput());
+        assertEquals("1", input.getInput());
     }
 
     @After

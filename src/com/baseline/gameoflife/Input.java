@@ -2,7 +2,7 @@ package com.baseline.gameoflife;
 
 import java.util.Scanner;
 
-public class View {
+public class Input {
 
     private String message;
 
@@ -10,4 +10,6 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+
 }

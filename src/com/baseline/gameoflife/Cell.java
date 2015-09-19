@@ -12,6 +12,9 @@ public class Cell {
     }
 
     public boolean isNeighbour(int thatX, int thatY) {
-        return true;
+        if(thatY == y + 1 || thatY == y - 1) {
+            return true;
+        }
+        return false;
     }
 }

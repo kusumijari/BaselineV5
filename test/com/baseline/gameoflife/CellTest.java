@@ -71,9 +71,16 @@ public class CellTest {
     }
 
     @Test
-    public void shouldReturnFalseIfTheCellIsNotANeighbourAndOnTheRowAbove() {
+    public void shouldReturnFalseIfTheCellIsNotANeighbourAndOnTheRowAboveOnTheRight() {
         Cell cell = new Cell(0, 3);
 
         assertFalse(cell.isNeighbour(1, 1));
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheCellIsNotANeighbourAndOnTheRowAboveOnTheLeft() {
+        Cell cell = new Cell(0, 0);
+
+        assertFalse(cell.isNeighbour(1, 2));
     }
 }

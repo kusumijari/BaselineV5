@@ -99,9 +99,25 @@ public class CellTest {
     }
 
     @Test
-    public void shouldReturnFalseIfeTheCellIsNotANeighbourAndOnTheRightOnTheRowAbove() {
+    public void shouldReturnFalseIfeTheCellIsNotANeighbourAndOnTheRowAboveOnTheRight() {
         Cell cell = new Cell(2, 1);
 
         assertFalse(cell.isNeighbour(0, 2));
     }
+
+    @Test
+    public void shouldReturnFalseIFtheCellNotANeighbourAndIsInTheLeftRowAndAbove() {
+        Cell cell = new Cell(2, 2);
+
+        assertFalse(cell.isNeighbour(0, 1));
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheCellIsNotANeighbourAndIsAboveInTheSameColumn() {
+        Cell cell = new Cell(2, 1);
+
+        assertFalse(cell.isNeighbour(0, 1));
+
+    }
+
 }

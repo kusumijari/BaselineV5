@@ -83,4 +83,11 @@ public class CellTest {
 
         assertFalse(cell.isNeighbour(1, 2));
     }
+
+    @Test
+    public void shouldReturnFalseIfTheCellIsNotANeighbourAndOnTheBelowAboveOnTheRight() {
+        Cell cell = new Cell(2, 3);
+
+        assertFalse(cell.isNeighbour(1, 1));
+    }
 }

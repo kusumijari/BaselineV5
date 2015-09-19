@@ -145,6 +145,6 @@ public class CellTest {
         Cell cell1 = new Cell(2, 1, 'x');
         Cell cell2 = new Cell(1, 1, '-');
 
-        assertEquals(cell1, cell2);
+        assertNotEquals(cell1, cell2);
     }
 }

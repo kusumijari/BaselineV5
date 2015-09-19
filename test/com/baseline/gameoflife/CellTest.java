@@ -139,4 +139,12 @@ public class CellTest {
 
         assertNotEquals(cell1, "not a cell object");
     }
+
+    @Test
+    public void shouldReturnFalseIfTheStateOfTheCellIsNotTheSame() {
+        Cell cell1 = new Cell(2, 1, 'x');
+        Cell cell2 = new Cell(1, 1, '-');
+
+        assertEquals(cell1, cell2);
+    }
 }

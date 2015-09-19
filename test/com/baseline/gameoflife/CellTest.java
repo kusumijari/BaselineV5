@@ -2,9 +2,7 @@ package com.baseline.gameoflife;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class CellTest {
 
@@ -128,4 +126,17 @@ public class CellTest {
         assertEquals(cell1, cell1);
     }
 
+    @Test
+    public void shouldReturnFalseIfTheOtherCellIsANullObject() {
+        Cell cell1 = new Cell(2, 1, 'x');
+
+        assertNotEquals(cell1, null);
+    }
+
+    @Test
+    public void shouldReturnFalseIfTheOtherCellIsNotACellObject() {
+        Cell cell1 = new Cell(2, 1, 'x');
+
+        assertNotEquals(cell1, "not a cell object");
+    }
 }

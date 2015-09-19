@@ -24,6 +24,9 @@ public class Cell {
 
     @Override
     public boolean equals(Object that){
-        return true;
+        if(that != null && (that.getClass() == Cell.class)) {
+            return true;
+        }
+        return false;
     }
 }

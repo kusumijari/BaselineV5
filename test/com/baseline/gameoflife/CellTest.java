@@ -34,4 +34,11 @@ public class CellTest {
 
         assertTrue(cell.isNeighbour(0, 0));
     }
+
+    @Test
+    public void shouldReturnFalseIfTheCellIsAVerticalCellndIsBelow() {
+        Cell cell = new Cell(1, 0);
+
+        assertTrue(cell.isNeighbour(2, 0));
+    }
 }

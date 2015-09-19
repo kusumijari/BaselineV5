@@ -41,5 +41,11 @@ public class CellTest {
 
         assertTrue(cell.isNeighbour(2, 0));
     }
-    
+
+    @Test
+    public void shouldReturnTrueIfTheCellIsDiagnolAndUpAndLeft() {
+        Cell cell = new Cell(0, 0);
+
+        assertTrue(cell.isNeighbour(1, 1));
+    }
 }

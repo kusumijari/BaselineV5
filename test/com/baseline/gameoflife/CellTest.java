@@ -36,9 +36,10 @@ public class CellTest {
     }
 
     @Test
-    public void shouldReturnFalseIfTheCellIsAVerticalCellndIsBelow() {
+    public void shouldReturnTrueIfTheCellIsAVerticalCellndIsBelow() {
         Cell cell = new Cell(1, 0);
 
         assertTrue(cell.isNeighbour(2, 0));
     }
+    
 }

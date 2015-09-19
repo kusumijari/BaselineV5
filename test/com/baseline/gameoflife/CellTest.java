@@ -97,4 +97,11 @@ public class CellTest {
 
         assertFalse(cell.isNeighbour(1, 2));
     }
+
+    @Test
+    public void shouldReturnFalseIfeTheCellIsNotANeighbourAndOnTheRightOnTheRowAbove() {
+        Cell cell = new Cell(2, 1);
+
+        assertFalse(cell.isNeighbour(0, 2));
+    }
 }

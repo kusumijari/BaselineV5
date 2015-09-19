@@ -14,7 +14,7 @@ public class Cell {
     public boolean isNeighbour(int thatX, int thatY) {
         if((thatY == y + 1 && thatX == x - 1) || (thatY == y - 1 && thatX == x) || (thatX == x - 1 && thatY == y)
                 || (thatX == x + 1 && thatY == y) || (thatX == x + 1 && thatY == y + 1) || (thatY == y + 1 && thatX == x)
-                || (thatX == x + 1) && (thatY == y - 1) || (thatX == x -1 && thatY == y - 1 )) {
+                || (thatX == x + 1) && (thatY == y - 1) || (thatX == x -1 && thatY == y - 1)) {
             return true;
         }
         return false;
